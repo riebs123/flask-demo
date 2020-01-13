@@ -14,7 +14,6 @@ def IndexRoute():
     ''' This function runs when the browser loads the index route. 
         Note that the html file must be located in a folder called templates. '''
 
-    print(">>> IndexRoute")
     webpage = render_template("index.html")
     return webpage
 
@@ -22,8 +21,6 @@ def IndexRoute():
 def OtherRoute():
     ''' This function runs when the user clicks the link for the other page.
         Note that the html file must be located in a folder called templates. '''
-
-    print(">>> OtherRoute")
 
     # Note that this call to render template passes in the title parameter. 
     # That title parameter is a 'Shirley' variable that could be called anything 
@@ -37,15 +34,12 @@ def TestRoute():
     ''' This function returns a simple message, just to guarantee that
         the Flask server is working. '''
 
-    print(">>> TestRoute")
     return "This is the test route!"
 
 @app.route("/dictionary")
 def DictionaryRoute():
     ''' This function returns a jsonified dictionary. Ideally we'd create 
         that dictionary from a database query. '''
-
-    print(">>> DictionaryRoute")
 
     dict = { "one": 1,
              "two": 2,
@@ -58,8 +52,6 @@ def DictRoute():
     ''' This seems to work in the latest versions of Chrome. But it's WRONG to
         return a dictionary (or any Python-specific datatype) without jsonifying
         it first! '''        
-
-    print(">>> DictRoute")
 
     dict = { "one": 1,
              "two": 2,
