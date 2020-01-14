@@ -29,12 +29,6 @@ def OtherRoute():
     webpage = render_template("other.html", title_we_want="Shirley")
     return webpage
 
-@app.route("/main")
-def MainRoute():
-    """ This function returns main.js to Chrome. """
-    webpage = render_template("main.js")
-    return webpage
-
 @app.route("/test")
 def TestRoute():
     ''' This function returns a simple message, just to guarantee that
