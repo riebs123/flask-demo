@@ -17,6 +17,5 @@ Additional notes:
 * You can peruse my files and my directory structure to see how this all comes together. Note that I haven't added any database code yet, but I've tried to add a bunch of helpful comments. 
 * The .html files need to live in a folder called templates or else Flask can't find them (at least not unless we do a lot of additional work). 
 * You're using a Flask server, not LiveServer. **LiveServer doesn't play a role in this project**, and won't work properly with the Flask server. (Yes, you can use LiveServer for quick changes to your html and your page layout. But it won't properly serve your data to you, because it doesn't know how.)
-* There's a wrinkle when trying to ``jsonify()`` the results of a MongoDB query. I'll eventually try to provide an example here, but please ask for help in the meantime. 
-* This demo doesn't include any JavaSript yet. I'll try to add some when I can. But the idea is that your JavaScript code would request data in JSON format from the API endpoint you create in ``app.py``. And from there, you can create your graphs. 
+* There's a wrinkle when trying to ``jsonify()`` the results of a MongoDB query. I'll eventually try to provide an example here, but please ask for help in the meantime.  
 
