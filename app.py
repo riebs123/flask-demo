@@ -47,9 +47,10 @@ def DictionaryRoute():
     ''' This function returns a jsonified dictionary. Ideally we'd create 
         that dictionary from a database query. '''
 
-    dict = { "one": 1,
-             "two": 2,
-             "three": 3}
+    dict = { "Tequila": 10,
+             "Beer": 2,
+             "Red Wine": 8,
+             "White Wine": 1}
     
     return jsonify(dict) # Return the jsonified version of the dictionary
 
