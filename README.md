@@ -9,13 +9,16 @@ Please clone this repository to your desktop and then do the following:
 3. type ``export FLASK_APP=app.py``
 4. type ``flask run``
 5. Observe that the Flask server starts and tells you which port it's running on. Don't close this window.
-6. With the Flask server running, enter this address in your Chrome browser: http://127.0.0.1:5000/. You'll see that it loads a page that says "This is index.html." 
-7. Click the link that says "Click here for the other page!" You'll notice that Chrome loads a new page. Be sure to view the link in the html to see how you specify this other page. It's different from what you might think!
-8. If you navigate to the following address, you'll see that it returns a json: http://127.0.0.1:5000/dictionary. This is an example of an API endpoint you'd use to get the data into your JavaScript file for graphing and analysis. 
+6. With the Flask server running, enter this address in your Chrome browser: http://127.0.0.1:5000/. You'll see that it loads the index page. 
+7. Click the link that says "Click here for the other page!" You'll notice that Chrome loads a new page containing a list of available routes. Be sure to view the link in the html to see how you specify this other page. It's different from what you might think!
+8. If you navigate to the following address, you'll see that it returns a JSON: http://127.0.0.1:5000/dictionary. This is an example of an API endpoint you'd use to get the data into your JavaScript file for graphing and analysis. 
+9. If you navigate to the following address, you'll see that it restores another JSON, this time from a database query. http://127.0.0.1:5000:fighteraircraft This is another example of an API endpoint. 
 
 Additional notes: 
-* You can peruse my files and my directory structure to see how this all comes together. Note that I haven't added any database code yet, but I've tried to add a bunch of helpful comments. 
-* The .html files need to live in a folder called templates or else Flask can't find them (at least not unless we do a lot of additional work). 
+* Please peruse my files and my directory structure to see how this all comes together.
+* Note the use of the ``templates`` and ``static`` folders. 
+* *NEW:* I've added some database queries. For these to work, you'll have to have the GlobalFirePower database we created in Week 9, Night 1, Activity 08-Stu_CRUD. If you don't have this database, you'll get unpredictable results.
+* *IMPORTANT:* You'll have to update the PostgreSQL username and password so that they match your own values. You likely have the same username, but your password will (probably) be different
 * You're using a Flask server, not LiveServer. **LiveServer doesn't play a role in this project**, and won't work properly with the Flask server. (Yes, you can use LiveServer for quick changes to your html and your page layout. But it won't properly serve your data to you, because it doesn't know how.)
 * There's a wrinkle when trying to ``jsonify()`` the results of a MongoDB query. I'll eventually try to provide an example here, but please ask for help in the meantime.  
 
