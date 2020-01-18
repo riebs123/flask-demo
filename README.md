@@ -10,7 +10,7 @@ Please clone this repository to your desktop and then do the following:
 4. type ``flask run``
 5. Observe that the Flask server starts and tells you which port it's running on. Don't close this window.
 6. With the Flask server running, enter this address in your Chrome browser: http://127.0.0.1:5000/. You'll see that it loads the index page. 
-7. Click the link that says "Click here for the other page!" You'll notice that Chrome loads a new page containing a list of available routes. Be sure to view the link in the html to see how you specify this other page. It's different from what you might think!
+7. Click the link that says "Click here for the other page!" You'll notice that Chrome loads a new page containing a list of available routes. Be sure to view the link in the HTML to see how you specify this other page. It's different from what you might think!
 8. If you navigate to the following address, you'll see that it returns a JSON: http://127.0.0.1:5000/dictionary. This is an example of an API endpoint you'd use to get data into your JavaScript file for graphing and analysis. 
 9. If you navigate to the following address, you'll see that it returns another JSON, this time from a database query: http://127.0.0.1:5000/fighteraircraft This is another example of an API endpoint. Please read the code in ``app.py`` to see how this all works. 
 
