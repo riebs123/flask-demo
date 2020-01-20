@@ -22,11 +22,11 @@ base.prepare(engine, reflect=True)
 
 # Choose the table we wish to use
 table = base.classes.firepower
-print("table: ", table)
 
 # Instantiate the Flask application. (Chocolate cake recipe.)
 # This statement is required for Flask to do its job. 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Effectively disables page caching
 
 # Here's where we define the various application routes ...
 @app.route("/")
