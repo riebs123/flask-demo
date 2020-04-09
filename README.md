@@ -5,7 +5,7 @@ This demonstration shows how to integrate Flask with your HTML and JavaScript co
 Please clone this repository to your desktop and then do the following:
 
 1. Navigate to the folder that contains ``app.py`` and launch a GitBash (Windows) or Terminal (Mac). 
-2. type ``source activate PythonWebMongo``
+2. type ``source activate PythonData``
 3. type ``export FLASK_APP=app.py``
 4. type ``flask run``
 5. Observe that the Flask server starts and tells you which port it's running on. Don't close this window.
