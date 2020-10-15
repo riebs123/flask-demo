@@ -103,10 +103,10 @@ def DictionaryRoute():
     ''' This function returns a jsonified dictionary. Ideally we'd create 
         that dictionary from a database query. '''
 
-    dict = { "Tequila": 10,
+    dict = { "Fine Sipping Tequila": 10,
              "Beer": 2,
              "Red Wine": 8,
-             "White Wine": 1}
+             "White Wine": 0.25}
     
     return jsonify(dict) # Return the jsonified version of the dictionary
 
@@ -120,7 +120,7 @@ def DictRoute():
              "two": 2,
              "three": 3}
     
-    return dict # Don't return a dictionary! 
+    return dict # WRONG! Don't return a dictionary! Return a JSON instead. 
 
 
 # This statement is required for Flask to do its job. 
